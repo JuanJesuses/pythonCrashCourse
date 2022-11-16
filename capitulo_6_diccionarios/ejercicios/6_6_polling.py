@@ -13,11 +13,7 @@ favorite_languages = {
     'phil' : 'python',
 }
 
-persons = []
-
-for person in range(6):
-    tiilo = input('introduce un nombre para la lista: ')
-    persons.append(tiilo)
+persons = ['jen', 'guido', 'sarah', 'edward', 'richard', 'phil']
 
 for person in persons:
     if person in favorite_languages.keys():
