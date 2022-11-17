@@ -10,3 +10,4 @@ while active:
         active =  False
     else:
         print(message)
+        print(message)
