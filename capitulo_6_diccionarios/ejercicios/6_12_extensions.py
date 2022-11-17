@@ -16,6 +16,6 @@ intruders = {
 }
 
 for nivel, tipos in intruders.items():
-    print(f"\nSi estás en el {intruders.get()}, la dificultad es {tipos.get('mode').title()}\ny estas son las características:")
+    print(f"\nSi estás en el {nivel}, la dificultad es {tipos.get('mode').title()}\ny estas son las características:")
     for tipo, valores in tipos.items():
         print(f"{tipo} : {valores}")
