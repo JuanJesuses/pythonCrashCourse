@@ -7,6 +7,6 @@ while active:
     message = input(prompt)
 
     if message == 'quit':
-        active =  False
+        active = False
     else:
         print(message)
