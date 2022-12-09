@@ -1,6 +1,5 @@
 class Dog:
     """Un intento sencillo de modelar un perro."""
-
     def __init__(self, name, age):
         """Inicializa los atributos nombre y edad."""
         self.name = name
@@ -16,9 +15,12 @@ class Dog:
 
 
 my_dog = Dog('Nuble', 6)
-my_dog.sit()
-my_dog.roll_over()
+your_dog = Dog('Willie', 7)
 
-"""
 print(f"Mi perro se llama {my_dog.name}.")
-print(f"Y tiene {my_dog.age} años.")"""
+print(f"Mi perro tiene {my_dog.age} años.")
+my_dog.sit()
+
+print(f"\nTu perro se llama {your_dog.name}.")
+print(f"Tu perro tiene {your_dog.age} años.")
+your_dog.sit()
