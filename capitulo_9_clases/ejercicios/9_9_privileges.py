@@ -1,8 +1,12 @@
-"""Una clase que se puede usar para representar un coche."""
-
+# Usa la versión final de ElectricCar de esta sección. Añade un método a la clase Battery llamado upgrade_battery().
+# Este método podrá comprobar el tamaño de la batería y establecer la capacidad a 100 si no lo está ya.
+# Crea un coche eléctrico con el tamaño de batería por defecto, llama al método get_range() una vez
+# y luego llama al método get_range() una segunda vez después de actualizar la batería.
+# Debes ver un incremento en el alcance del coche.
 
 class Car:
     """un simple intento de representar un coche."""
+
     def __init__(self, make, model, year):
         """Inicializa los atributos para describir un coche."""
         self.make = make
@@ -28,12 +32,16 @@ class Car:
             print("no puedes retroceder el cuentakilómetros, hijueputa!")
 
     def increment_odometer(self, miles):
-        """Añade una cantidad dada a la lectura del cuentakilómetros."""
         self.odometer_reading += miles
+
+    def fill_gas_tank(self, amount):
+        """Indica la cantida de combustible que tiene el coche"""
+        self.amount = amount
+        print(f"El coche tiene {self.amount} litros de gasolina.")
 
 class Battery:
     """A simple attempt to model a battery for an electric car."""
-    def __init__(self, battery_size=100):
+    def __init__(self, battery_size=75):
         """Initialize the battery's attributes."""
         self.battery_size = battery_size
     def describe_battery(self):
@@ -49,6 +57,11 @@ class Battery:
 
         print(f"Este coche puede circular unos {range} kilómetros con una carga completa.")
 
+    def upgrade_battery(self):
+        """Actualiza el tamaño de la batería a 100kWh."""
+        if self.battery_size != 100:
+            self.battery_size = 100
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
@@ -57,3 +70,13 @@ class ElectricCar(Car):
            Then initialize attributes specific to an electric car."""
         super().__init__(make, model, year)
         self.battery = Battery()
+
+    def fill_gas_tank(self):
+        """Los coches eléctricos no necesitan un tanque de gasolina."""
+        print("Este coche no necesita un tanque de gasolina.")
+
+my_tesla = ElectricCar('tesla', 'model s', 2019)
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
+print("--------------------------")
+my_tesla.battery.get_range()

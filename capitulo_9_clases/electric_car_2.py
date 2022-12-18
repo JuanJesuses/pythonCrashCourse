@@ -1,8 +1,6 @@
-"""Una clase que se puede usar para representar un coche."""
-
-
 class Car:
     """un simple intento de representar un coche."""
+
     def __init__(self, make, model, year):
         """Inicializa los atributos para describir un coche."""
         self.make = make
@@ -28,8 +26,12 @@ class Car:
             print("no puedes retroceder el cuentakilómetros, hijueputa!")
 
     def increment_odometer(self, miles):
-        """Añade una cantidad dada a la lectura del cuentakilómetros."""
         self.odometer_reading += miles
+
+    def fill_gas_tank(self, amount):
+        """Indica la cantida de combustible que tiene el coche"""
+        self.amount = amount
+        print(f"El coche tiene {self.amount} litros de gasolina.")
 
 class Battery:
     """A simple attempt to model a battery for an electric car."""
@@ -57,3 +59,18 @@ class ElectricCar(Car):
            Then initialize attributes specific to an electric car."""
         super().__init__(make, model, year)
         self.battery = Battery()
+
+    def fill_gas_tank(self):
+        """Los coches eléctricos no necesitan un tanque de gasolina."""
+        print("Este coche no necesita un tanque de gasolina.")
+
+
+#coche1 = Car('Ssang Yong', 'Rodius', 2015)
+#coche1.fill_gas_tank(75)
+#my_tesla.fill_gas_tank()
+
+my_tesla = ElectricCar('tesla', 'model s', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.battery.battery_size = 100
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()

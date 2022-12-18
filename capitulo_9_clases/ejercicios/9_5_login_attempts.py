@@ -42,8 +42,7 @@ user1.increment_login_attempts()
 user1.increment_login_attempts()
 user1.increment_login_attempts()
 user1.increment_login_attempts()
-
 print(f"El valor de login_attempts es: {user1.login_attempts}")
-user1.reset_login_attempts()
 
+user1.reset_login_attempts()
 print(f"El valor actual de login attempts es: {user1.login_attempts}")

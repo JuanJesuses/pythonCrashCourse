@@ -19,6 +19,6 @@ my_dog = Dog('Nuble', 6)
 my_dog.sit()
 my_dog.roll_over()
 
-"""
+
 print(f"Mi perro se llama {my_dog.name}.")
-print(f"Y tiene {my_dog.age} años.")"""
+print(f"Y tiene {my_dog.age} años.")

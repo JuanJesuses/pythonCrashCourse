@@ -30,19 +30,20 @@ class Restaurant:
 
 class IceCreamStand(Restaurant):
     """Modela un tipo de restaurante dedicado a los helados."""
-    def __init__(self, restaurant_name, cuisine_type, flavours):
+    def __init__(self, restaurant_name, cuisine_type): #, flavours
         """Representa aspectos de un tipo de restaurante dedicado a los helados."""
-        super.__init__(restaurant_name, cuisine_type)
-        self.flavours = [flavours]
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavours = []
 
-    def show_flavours(self, sabores):
+    def show_flavours(self):
         """Muestra una lista con los sabores de los helados."""
         num = 1
         for sabor in self.flavours:
-            print(f"{num} - {sabor}")
+            print(f"{num} - {sabor.title()}")
             num += 1
 
 
 restaurante_postre = IceCreamStand('shanaya', 'árabe')
-restaurante_postre.show_flavours(['yogur', 'fresa', 'mango', 'stracciatela'])
+restaurante_postre.flavours = ['yogur', 'fresa', 'mango', 'stracciatela']
+restaurante_postre.show_flavours()
 
