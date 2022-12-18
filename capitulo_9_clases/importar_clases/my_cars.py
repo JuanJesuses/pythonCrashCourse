@@ -1,4 +1,4 @@
-from car import Car, ElectricCar
+from capitulo_9_clases.importar_clases.car import Car, ElectricCar
 
 my_beetle = Car('volkswagen', 'beetle', 2019)
 print(my_beetle.get_descriptive_name())
