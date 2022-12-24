@@ -1,0 +1,8 @@
+Haz un dado de 6 caras y hazlo rodar 6 veces:
+(4,5,4,3,3,6)
+
+Haz un dado de 10 caras y hazlo rodar 10 veces:
+(4,9,9,10,10,8,1,7,1,5)
+
+Haz un dado de 20 caras y hazlo rodar 10 veces:
+(4,13,6,13,18,19,7,1,4,14)

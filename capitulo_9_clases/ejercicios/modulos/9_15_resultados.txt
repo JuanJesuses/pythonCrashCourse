@@ -1,0 +1,19 @@
+Intento 1:
+El boleto ganador es ['a', '18', '45', 'j'].
+Sólo has necesitado 87940 intentos para ganar la lotería.
+
+Intento 1:
+El boleto ganador es ['a', '18', '45', 'j'].
+Sólo has necesitado 67985 intentos para ganar la lotería.
+
+Intento 1:
+El boleto ganador es ['a', '18', '45', 'j'].
+Sólo has necesitado 30824 intentos para ganar la lotería.
+
+Intento 1:
+El boleto ganador es ['a', '18', '45', 'j'].
+Sólo has necesitado 136854 intentos para ganar la lotería.
+
+Intento 1:
+El boleto ganador es ['a', '18', '45', 'j'].
+Sólo has necesitado 24462 intentos para ganar la lotería.
