@@ -1,0 +1,4 @@
+In Python you can loop through lists, dictionaries and other data collections.
+In Python you can find text with simple order like "in".
+In Python you can read text files, line by line.
+In Python you can you can do most things with simple orders.
