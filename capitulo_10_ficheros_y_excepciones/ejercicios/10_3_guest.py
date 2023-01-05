@@ -3,5 +3,5 @@
 
 nombre = input('¿Cuál es tu nombre?: ')
 
-with open('guest.txt', 'w') as file_object:
+with open('guest.txt', 'a') as file_object:
     file_object.write(nombre)
