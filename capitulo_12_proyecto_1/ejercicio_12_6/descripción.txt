@@ -1,0 +1,13 @@
+En sideway shooter el jugador controla una nave que aparece en el centro de la parte izquierda de la pantalla. La
+nave se desplazrá arriba y abajo según las teclas de dirección que pulse el jugador y podrá disparar proyectiles con la
+barra espaciadora.
+Cuando comienza el juego, una flota de naves extraterrestres aparece en la parte derecha de la pantalla y moviéndose
+arriba y abajo. Cuando el jugador ha terminado con todas, aparece una nueva flota que se mueve más rápido
+que la anterior. Si una nave toca  la nave del jugador o llega al fondo de la parte izquierda de la pantalla, el jugador
+pierde una vida y la lota extraterrestre se rehace completamente. Cuando el jugador pierde tres vidas, acaba el juego.
+
+métodos de imagen:
+
+fill - rellena el fondo de la pantalla
+flip - (screen.display.flip) - Hace visible la pantalla
+blit - (self.screen.blit(self.image, self.rect)) - Dibuja la imagen en la pantalla especificada.
